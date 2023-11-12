@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-@Schema(description = "Response order creation")
+@Schema(description = "Response to order creation request")
 public class ResponseMsg {
     @Schema(description = "Order id")
     private Long orderId;

@@ -42,12 +42,21 @@ public class Order {
         Order order = (Order) o;
         return getUserId() == order.getUserId()
                 && getTotalPrice() == order.getTotalPrice()
-                && Objects.equals(getId(), order.getId())
                 && Objects.equals(getItems(), order.getItems());
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getUserId(), getTotalPrice(), getItems());
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", totalPrice=" + totalPrice +
+                ", items=" + items +
+                '}';
     }
 }

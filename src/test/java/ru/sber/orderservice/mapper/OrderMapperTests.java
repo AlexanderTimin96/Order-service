@@ -19,9 +19,7 @@ public class OrderMapperTests {
 
         Order result = orderMapper.orderDTOtoOrder(data.getOrderDTO());
 
-        Assertions.assertEquals(expected.getTotalPrice(), result.getTotalPrice());
-        Assertions.assertEquals(expected.getUserId(), result.getUserId());
-        Assertions.assertEquals(expected.getItems(), result.getItems());
+        Assertions.assertEquals(expected, result);
     }
 
 }

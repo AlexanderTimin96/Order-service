@@ -57,4 +57,15 @@ public class OrderItem {
     public int hashCode() {
         return Objects.hash(getId(), getNameProduct(), getQuantity(), getDescription(), getPrice());
     }
+
+    @Override
+    public String toString() {
+        return "OrderItem{" +
+                "id=" + id +
+                ", nameProduct='" + nameProduct + '\'' +
+                ", quantity=" + quantity +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
